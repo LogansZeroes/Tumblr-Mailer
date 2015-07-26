@@ -1,0 +1,23 @@
+<html>
+<head><meta charset='utf-8'></head>
+<body>
+	<p> Hi <%= firstName %>, </p>
+	<br>
+	<p>
+		How have you been? It's been about <%= numMonthsSinceContact %> months since we last chatted so I thought I would just briefly catch you up. I've been learning to code full-time at Fullstack Academy (the on-site portion starts on Monday!). My hope is that I will become proficient enough at developing web applications to start my career in Silicon Valley by the end of this year. This is an auto-generated email I created programmatically for a project during the beginning of Fullstack Academy.
+	</p>
+	<p>
+		I also created a new blog to talk about my experience. 
+		My latest posts are:
+    <ul>
+      <% for(var i=0; i<latestPosts.length; i++) {%>
+         <li><a href=<%= latestPosts[i].href %> <%= latestPosts[i].title %></a>  </li>
+      <% } %>
+    </ul>
+	</p>
+	<p>
+		Hope you're doing well, <br>
+		Jimin
+	</p>
+</body>
+</html>
